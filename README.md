@@ -1,4 +1,4 @@
-# cybersecurity
+# Códigos, linguagens e programas...
 cods kali linux
 cods visualg
 cods python
