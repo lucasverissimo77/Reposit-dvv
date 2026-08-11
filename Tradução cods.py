@@ -79,3 +79,79 @@ MINHAS ANOTAÇÕES DE PYTHON - SISTEMA DE LOGIN (VERSÃO 2.0)
 * for user in usuarios_cadastrados:
   -> O laço "for" passa de linha em linha pelo dicionário.
   -> Ele pega o nome de cada usuário cadastrado, um por um.
+
+
+
+  ============================================================
+MINHAS ANOTAÇÕES DE PYTHON - CALCULADORA DE MÉDIA (V2.0)
+============================================================
+
+1. CRIAÇÃO DE FUNÇÕES
+------------------------------------------------------------
+* def calcular_medias():
+  -> O "def" serve para definir (criar) uma função personalizada.
+  -> Uma função é como um bloco de código guardado que você pode 
+     chamar para rodar a qualquer momento.
+  
+* calcular_medias()
+  -> Executa (chama) a função que foi criada lá em cima para o 
+     programa começar a rodar de fato.
+
+
+2. TRATAMENTO DE ERROS (EVITA QUE O PROGRAMA FECHE SE ERRAR)
+------------------------------------------------------------
+* try:
+  -> Significa "Tente". O Python vai tentar rodar o código que está 
+     aqui dentro. Se o usuário digitar um texto onde deveria ser um 
+     número, o programa não vai "quebrar" (dar erro).
+
+* except ValueError:
+  -> Significa "Exceção para Erro de Valor". Se o código de dentro do 
+     "try" falhar porque o usuário digitou uma letra em vez de número, 
+     o Python desvia para cá e roda o aviso de erro.
+
+
+3. ESTRUTURAS DE DADOS (LISTAS)
+------------------------------------------------------------
+* medias = []
+  -> Cria uma Lista vazia usando colchetes [ ].
+  -> Listas servem para guardar vários valores na ordem em que foram 
+     digitados (como uma fileira de gavetas).
+
+* medias.append(nota)
+  -> O comando ".append()" adiciona um novo item (a nota) no final 
+     da lista "medias".
+
+
+4. CONVERSÃO DE TIPOS E MATEMÁTICA
+------------------------------------------------------------
+* int(input(...))
+  -> Converte o texto que o usuário digitou em um número INTEIRO 
+     (sem casas decimais, ex: 1, 2, 5).
+
+* float(input(...))
+  -> Converte o texto que o usuário digitou em um número FLUTUANTE 
+     (com casas decimais, ex: 7.5, 8.0, 10.0).
+
+* sum(medias)
+  -> O comando "sum()" soma automaticamente todos os números que 
+     estão guardados dentro da lista "medias".
+
+* {media:.2f}
+  -> Formata um número flutuante dentro da f-string. 
+  -> O ".2f" diz ao Python para mostrar apenas 2 casas após o ponto 
+     (ex: transforma 7.666666 em 7.67).
+
+
+5. LAÇOS DE REPETIÇÃO E ÍNDICES (FOR / RANGE)
+------------------------------------------------------------
+* for i in range(1, total_notas + 1):
+  -> O "range(inicio, fim)" gera uma sequência de números.
+  -> Se "total_notas" for 3, ele vai contar de 1 até 3 (o +1 serve 
+     porque o Python sempre para um número antes do limite final).
+  -> A variável "i" guarda o número da contagem atual (1, depois 2...).
+
+* medias[i]
+  -> Acessa um valor específico dentro da lista usando o seu Índice 
+     (posição). Em Python, as posições começam sempre do 0.
+
